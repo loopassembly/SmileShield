@@ -14,3 +14,8 @@ config.json
 
 # Ignore .env file
 *.env
+#ignore database file
+*.test.db
+
+
+
