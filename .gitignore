@@ -13,4 +13,4 @@
 config.json
 
 # Ignore .env file
-.env
+*.env
