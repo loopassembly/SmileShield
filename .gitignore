@@ -1,2 +1,16 @@
-# .gitignore
+# Ignore compiled binaries
+*.exe
+*.dll
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore node_modules directory
+/node_modules/
+
+# Ignore configuration files with sensitive information
+config.json
+
+# Ignore .env file
 .env
