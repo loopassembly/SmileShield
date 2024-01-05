@@ -43,7 +43,7 @@ func DeserializeUser(c *fiber.Ctx) error {
 
 	}
 
-	var user models.User
+	var user models.User // model user
 	initializers.DB.First(&user, "id = ?", fmt.Sprint(claims["sub"]))
 
 	if user.ID != claims["sub"] {
