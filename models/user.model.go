@@ -51,7 +51,7 @@ type SignInInput struct {
 	Email    string `json:"email"  validate:"required"`
 	Password string `json:"password"  validate:"required"`
 }
-
+//user response
 type UserResponse struct {
 	ID        uuid.UUID `json:"id,omitempty"`
 	Name      string    `json:"name,omitempty"`
@@ -62,7 +62,7 @@ type UserResponse struct {
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
-
+//filter user
 func FilterUserRecord(user *User) UserResponse {
 	id := user.ID
 	return UserResponse{
@@ -84,7 +84,7 @@ type ErrorResponse struct {
 	Tag   string `json:"tag"`
 	Value string `json:"value,omitempty"`
 }
-
+// VALIDATE STRUCT
 func ValidateStruct[T any](payload T) []*ErrorResponse {
 	var errors []*ErrorResponse
 	err := validate.Struct(payload)
@@ -100,12 +100,12 @@ func ValidateStruct[T any](payload T) []*ErrorResponse {
 	return errors
 }
 
-// ? ForgotPasswordInput struct
+// ForgotPasswordInput struct
 type ForgotPasswordInput struct {
 	Email string `json:"email" binding:"required"`
 }
 
-// ? ResetPasswordInput struct
+// ResetPasswordInput struct
 type ResetPasswordInput struct {
 	Password        string `json:"password" binding:"required"`
 	PasswordConfirm string `json:"passwordConfirm" binding:"required"`
