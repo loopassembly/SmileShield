@@ -20,3 +20,16 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
    ```bash
    git clone https://github.com/your-username/smileshield.git
    cd smileshield
+
+2. Install dependencies:
+
+   ```bash
+   go get -u .
+3. # .env
+ ```bash
+PORT=3000
+OAUTH_CLIENT_ID=your_oauth_client_id
+OAUTH_CLIENT_SECRET=your_oauth_client_secret
+MAIL_USERNAME=your_mail_username
+MAIL_PASSWORD=your_mail_password
+
