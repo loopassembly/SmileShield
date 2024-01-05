@@ -2,28 +2,43 @@ package main
 
 import "fmt"
 
-func main() {
-	var arry=[]int{1,2,3,4,5,6,7,8,9,10}
-	var target int =7;
-	var result int = binarySearch(arry,target)
-
-  
+type Node struct {
+    Data int
+    Next *Node
 }
 
-func binarySearch(arr []int, target int )int {
-	var left int =0;
-	var right int =len(arr)-1;
-	var mid int =0;
-	for left<=right{
-		mid = (left+right)/2;
-		if arr[mid]==target{
-			return mid;
-		}else if arr[mid]<target{
-			left=mid+1;
-		}else{
-			right=mid-1;
-		}
-	}
-	return -1;
+type LinkedList struct {
+    Head *Node
+}
 
+func (ll *LinkedList) Append(data int) {
+    newNode := &Node{Data: data, Next: nil}
+    if ll.Head == nil {
+        ll.Head = newNode
+        return
+    }
+    current := ll.Head
+    for current.Next != nil {
+        current = current.Next
+    }
+    current.Next = newNode
+}
+
+func (ll *LinkedList) Display() {
+    current := ll.Head
+    for current != nil {
+        fmt.Printf("%d -> ", current.Data)
+        current = current.Next
+    }
+    fmt.Println("nil")
+}
+
+func main() {
+    linkedList := &LinkedList{}
+    linkedList.Append(1)
+    linkedList.Append(2)
+    linkedList.Append(3)
+
+    fmt.Println("linklNode")
+    linkedList.Display()
 }
