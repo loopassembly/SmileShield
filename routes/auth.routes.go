@@ -6,7 +6,7 @@ import (
 	"cypher-server/controllers"
 	"cypher-server/middleware"
 )
-
+// all auth routes including oauth
 func SetupAuthRoutes(router fiber.Router) {
 	router.Post("/register", controllers.SignUpUser)
 	router.Post("/login", controllers.SignInUser)
