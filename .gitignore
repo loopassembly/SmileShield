@@ -20,6 +20,7 @@ config.json
 
 # ignore vscode congif
 *.vscode
+
 *commit.txt
 
 
