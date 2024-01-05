@@ -31,6 +31,7 @@ func main() {
 
 	app.Mount("/api", micro)
 	app.Use(logger.New())
+	// cors
 	app.Use(cors.New(cors.Config{
 		AllowOrigins:     "http:/",
 		AllowHeaders:     "Origin, Content-Type, Accept",
