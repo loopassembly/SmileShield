@@ -16,6 +16,7 @@ func ConnectDB(config *Config) {
 
     // Set the SQLite3 database path
     // dbPath := config.DBPath
+    // DB
 
     DB, err = gorm.Open(sqlite.Open("test.db"), &gorm.Config{}) //?sqlite
     if err != nil {
