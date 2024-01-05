@@ -397,7 +397,7 @@ func GitHubOAuth(c *fiber.Ctx) error {
 
 	c.Cookie(&fiber.Cookie{
 		Name:     "token",
-		Value:    token,
+		Value:    token,//jwt
 		Expires:  time.Now().Add(time.Minute * time.Duration(config.JwtMaxAge)),
 		HTTPOnly: true,
 		SameSite: "Lax",
