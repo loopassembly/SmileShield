@@ -17,7 +17,7 @@ func ConnectDB(config *Config) {
     // Set the SQLite3 database path
     // dbPath := config.DBPath
 
-    DB, err = gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
+    DB, err = gorm.Open(sqlite.Open("test.db"), &gorm.Config{}) //?sqlite
     if err != nil {
         log.Fatal("Failed to connect to the Database! \n", err.Error())
         os.Exit(1)
