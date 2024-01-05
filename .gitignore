@@ -16,13 +16,7 @@ config.json
 *.env
 
 #ignore database file
-*test.db
-
-# ignore vscode congif
-*.vscode
-
-*commit.txt
-
+*.test.db
 
 
 
