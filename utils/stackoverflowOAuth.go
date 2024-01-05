@@ -59,10 +59,10 @@ func GetStackOverflowOauthToken(code string) (*StackOverflowOauthToken, error) {
 
 
 type StackOverflowUserResult struct {
-    DisplayName  string `json:"display_name"`
-    ProfileImage string `json:"profile_image"`
-    Email        string `json:"email"`
-    ProfileURL   string `json:"profile_url"`
+    DisplayName  string `json:"display_name"` //name
+    ProfileImage string `json:"profile_image"` //profile_name
+    Email        string `json:"email"` // email
+    ProfileURL   string `json:"profile_url"`// profile uri
 }
 
 func GetStackOverflowUser(access_token string) (*StackOverflowUserResult, error) {
