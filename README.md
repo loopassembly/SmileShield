@@ -30,12 +30,45 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
 3. Setup '.env':
 
     ```bash
-    PORT=3000
-    OAUTH_CLIENT_ID=your_oauth_client_id
-    OAUTH_CLIENT_SECRET=your_oauth_client_secret
-    MAIL_USERNAME=your_mail_username
-    MAIL_PASSWORD=your_mail_password
-    ```
+    # POSTGRES_HOST=127.0.0.1
+   # POSTGRES_USER=postgres
+   # POSTGRES_PASSWORD=password123
+   # POSTGRES_DB=golang-gorm
+   # POSTGRES_PORT=6500
+
+   PORT=8000
+   CLIENT_ORIGIN='http://localhost:3000/'
+
+
+   EMAIL_FROM='enter_email'
+   SMTP_HOST='enter_host_name'
+   SMTP_USER='enter_email_if_u_don't_know'
+   SMTP_PASS='*******'
+   SMTP_PORT='according_to_ur_provider'
+
+   TOKEN_EXPIRED_IN=60m
+   TOKEN_MAXAGE=60
+
+   TOKEN_SECRET='my-ultra-secure-json-web-token-string'
+
+   JWT_SECRET='my_ultra_secure_secret'
+   JWT_EXPIRED_IN=60m
+   JWT_MAXAGE=60
+
+   #? google auth
+   GOOGLE_OAUTH_CLIENT_ID='xyz...'
+   GOOGLE_OAUTH_CLIENT_SECRET='secret....'
+   GOOGLE_OAUTH_REDIRECT_URL='http://localhost:3000/api/auth/sessions/oauth/google'
+
+   #? github auth
+   GITHUB_OAUTH_CLIENT_ID='xyz...'
+   GITHUB_OAUTH_CLIENT_SECRET='secret....'
+   GITHUB_OAUTH_REDIRECT_URL='http://localhost:3000/api/auth/sessions/oauth/github'
+
+   # ?stackoverflow auth
+   STACKOVERFLOW_OAUTH_CLIENT_ID='xyz...'
+   STACKOVERFLOW_CLIENT_SECRET='tsecret....'
+   STACKOVERFLOW_REDIRECT_URL='http://localhost:3000/api/auth/sessions/oauth/stackoverflow' ```
 
 4.  Run:
 
