@@ -37,11 +37,58 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
     MAIL_PASSWORD=your_mail_password
     ```
 
-4.  Usage:
+4.  Run:
 
     ```bash
     go run main.go
     ```
+
+## Uses
+
+Here are the key dependencies and libraries used in SmileShield:
+
+ **Validator (github.com/go-playground/validator/v10 v10.16.0):**
+   - Essential for validating input data and ensuring it meets specified criteria.
+
+ **Fiber (github.com/gofiber/fiber/v2 v2.50.0):**
+   - The core web framework for handling HTTP requests and responses in the project.
+
+**Fiber HTML Template Engine (github.com/gofiber/template/html/v2 v2.0.5):**
+   - Template engine for rendering HTML views in the web application.
+
+ **JWT Library (github.com/golang-jwt/jwt v3.2.2+incompatible, github.com/golang-jwt/jwt/v5 v5.0.0):**
+   - Handles JSON Web Tokens (JWT) for user authentication.
+
+ **UUID (github.com/google/uuid v1.4.0):**
+   - Used for generating and working with universally unique identifiers (UUIDs).
+
+**HTML to Text Converter (github.com/k3a/html2text v1.2.1):**
+   - Potentially used for converting HTML to plain text.
+
+**Viper (github.com/spf13/viper v1.17.0):**
+   - A popular configuration management library, used for reading configuration files.
+
+**Random String Generator (github.com/thanhpk/randstr v1.0.6):**
+   - Generates random strings, useful for various purposes such as tokens or passwords.
+
+**Crypto (golang.org/x/crypto v0.14.0):**
+   - Part of the Go standard library, includes cryptographic primitives.
+
+**Email (gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df):**
+    - Library for sending emails, crucial for applications involving email functionality.
+
+**GORM SQLite Driver (gorm.io/driver/sqlite v1.5.4):**
+    - SQLite driver for GORM, a powerful Object-Relational Mapping (ORM) library.
+
+**GORM (gorm.io/gorm v1.25.5):**
+    - GORM itself, providing a flexible way to interact with databases.
+
+### Note:
+
+- Ensure you understand the licenses associated with these dependencies.
+- Keep dependencies up to date for security and feature improvements.
+- Refer to the project's documentation for specific use cases or configurations related to these dependencies.
+
 
 ## Features
 
@@ -146,9 +193,6 @@ Replace placeholders like `your_google_oauth_client_id` and `your_google_oauth_c
 
 Replace placeholders like `your_github_oauth_client_id` and `your_github_oauth_client_secret` with your actual GitHub OAuth credentials. The animated GIF shows the process of updating the configuration in your `.env` file for GitHub OAuth.
 
-## License
-
-Specify the license for your project.
 
 ## Contributing
 
@@ -191,3 +235,7 @@ We're currently working on adding Stack Overflow OAuth to SmileShield! If you're
 If you have questions or need help, feel free to reach out on our [Discussions](https://github.com/loopassembly/smileshield/discussions) page.
 
 Thank you for your contribution! 🚀
+
+## License
+
+Specify the license for your project.
