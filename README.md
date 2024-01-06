@@ -43,7 +43,7 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
     go run main.go
     ```
 
-## Uses
+## Usage
 
 Key dependencies and libraries powering SmileShield:
 
