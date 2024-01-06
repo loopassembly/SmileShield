@@ -47,41 +47,41 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
 
 Key dependencies and libraries powering SmileShield:
 
-**Validator ([`go-playground/validator/v10`](https://github.com/go-playground/validator/v10) v10.16.0):**
-   - Validates input data against specified criteria.
-
-**Fiber ([`gofiber/fiber/v2`](https://github.com/gofiber/fiber/v2) v2.50.0):**
-   - Core web framework for handling HTTP requests and responses.
-
-**Fiber HTML Template Engine ([`gofiber/template/html/v2`](https://github.com/gofiber/template/html/v2) v2.0.5):**
-   - Renders HTML views in the web application.
-
-**JWT Library ([`golang-jwt/jwt`](https://github.com/golang-jwt/jwt) v3.2.2+incompatible, [`golang-jwt/jwt/v5`](https://github.com/golang-jwt/jwt/v5) v5.0.0):**
-   - Manages JSON Web Tokens for user authentication.
-
-**UUID ([`google/uuid`](https://github.com/google/uuid) v1.4.0):**
-   - Generates and works with universally unique identifiers (UUIDs).
-
-**HTML to Text Converter ([`k3a/html2text`](https://github.com/k3a/html2text) v1.2.1):**
-   - Converts HTML to plain text.
-
-**Viper ([`spf13/viper`](https://github.com/spf13/viper) v1.17.0):**
-   - Popular configuration management library for reading configuration files.
-
-**Random String Generator ([`thanhpk/randstr`](https://github.com/thanhpk/randstr) v1.0.6):**
-   - Generates random strings for various purposes.
-
-**Crypto ([`golang.org/x/crypto`](https://pkg.go.dev/golang.org/x/crypto) v0.14.0):**
-   - Part of the Go standard library, includes cryptographic primitives.
-
-**Email ([`gomail.v2`](https://pkg.go.dev/gopkg.in/gomail.v2) v2.0.0-20160411212932-81ebce5c23df):**
-    - Library for sending emails, crucial for applications involving email functionality.
-
-**GORM SQLite Driver ([`gorm.io/driver/sqlite`](https://gorm.io/docs/sqlite.html) v1.5.4):**
-    - SQLite driver for GORM, a powerful Object-Relational Mapping (ORM) library.
-
-**GORM ([`gorm.io/gorm`](https://gorm.io/docs/index.html) v1.25.5):**
-    - Provides a flexible way to interact with databases.
+> **Validator ([`go-playground/validator/v10`](https://github.com/go-playground/validator/v10) v10.16.0):**
+   > - Validates input data against specified criteria.
+>
+> **Fiber ([`gofiber/fiber/v2`](https://github.com/gofiber/fiber/v2) v2.50.0):**
+  > - Core web framework for handling HTTP requests and responses.
+>
+> **Fiber HTML Template Engine ([`gofiber/template/html/v2`](https://github.com/gofiber/template/html/v2) v2.0.5):**
+  > - Renders HTML views in the web application.
+>
+> **JWT Library ([`golang-jwt/jwt`](https://github.com/golang-jwt/jwt) v3.2.2+incompatible, [`golang-jwt/jwt/v5`](https://github.com/golang-jwt/jwt/v5) v5.0.0):**
+   > - Manages JSON Web Tokens for user authentication.
+>
+> **UUID ([`google/uuid`](https://github.com/google/uuid) v1.4.0):**
+  > - Generates and works with universally unique identifiers (UUIDs).
+>
+> **HTML to Text Converter ([`k3a/html2text`](https://github.com/k3a/html2text) v1.2.1):**
+  > - Converts HTML to plain text.
+>
+> **Viper ([`spf13/viper`](https://github.com/spf13/viper) v1.17.0):**
+   > - Popular configuration management library for reading configuration files.
+>
+> **Random String Generator ([`thanhpk/randstr`](https://github.com/thanhpk/randstr) v1.0.6):**
+   > - Generates random strings for various purposes.
+>
+> **Crypto ([`golang.org/x/crypto`](https://pkg.go.dev/golang.org/x/crypto) v0.14.0):**
+  >  - Part of the Go standard library, includes cryptographic primitives.
+>
+> **Email ([`gomail.v2`](https://pkg.go.dev/gopkg.in/gomail.v2) v2.0.0-20160411212932-81ebce5c23df):**
+   >  - Library for sending emails, crucial for applications involving email functionality.
+>
+> **GORM SQLite Driver ([`gorm.io/driver/sqlite`](https://gorm.io/docs/sqlite.html) v1.5.4):**
+   >  - SQLite driver for GORM, a powerful Object-Relational Mapping (ORM) library.
+>
+> **GORM ([`gorm.io/gorm`](https://gorm.io/docs/index.html) v1.25.5):**
+   > - Provides a flexible way to interact with databases.
 
 ### Note:
 
