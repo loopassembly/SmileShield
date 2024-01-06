@@ -45,49 +45,49 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
 
 ## Uses
 
-Here are the key dependencies and libraries used in SmileShield:
+Key dependencies and libraries powering SmileShield:
 
- **Validator (github.com/go-playground/validator/v10 v10.16.0):**
-   - Essential for validating input data and ensuring it meets specified criteria.
+**Validator ([`go-playground/validator/v10`](https://github.com/go-playground/validator/v10) v10.16.0):**
+   - Validates input data against specified criteria.
 
- **Fiber (github.com/gofiber/fiber/v2 v2.50.0):**
-   - The core web framework for handling HTTP requests and responses in the project.
+**Fiber ([`gofiber/fiber/v2`](https://github.com/gofiber/fiber/v2) v2.50.0):**
+   - Core web framework for handling HTTP requests and responses.
 
-**Fiber HTML Template Engine (github.com/gofiber/template/html/v2 v2.0.5):**
-   - Template engine for rendering HTML views in the web application.
+**Fiber HTML Template Engine ([`gofiber/template/html/v2`](https://github.com/gofiber/template/html/v2) v2.0.5):**
+   - Renders HTML views in the web application.
 
- **JWT Library (github.com/golang-jwt/jwt v3.2.2+incompatible, github.com/golang-jwt/jwt/v5 v5.0.0):**
-   - Handles JSON Web Tokens (JWT) for user authentication.
+**JWT Library ([`golang-jwt/jwt`](https://github.com/golang-jwt/jwt) v3.2.2+incompatible, [`golang-jwt/jwt/v5`](https://github.com/golang-jwt/jwt/v5) v5.0.0):**
+   - Manages JSON Web Tokens for user authentication.
 
- **UUID (github.com/google/uuid v1.4.0):**
-   - Used for generating and working with universally unique identifiers (UUIDs).
+**UUID ([`google/uuid`](https://github.com/google/uuid) v1.4.0):**
+   - Generates and works with universally unique identifiers (UUIDs).
 
-**HTML to Text Converter (github.com/k3a/html2text v1.2.1):**
-   - Potentially used for converting HTML to plain text.
+**HTML to Text Converter ([`k3a/html2text`](https://github.com/k3a/html2text) v1.2.1):**
+   - Converts HTML to plain text.
 
-**Viper (github.com/spf13/viper v1.17.0):**
-   - A popular configuration management library, used for reading configuration files.
+**Viper ([`spf13/viper`](https://github.com/spf13/viper) v1.17.0):**
+   - Popular configuration management library for reading configuration files.
 
-**Random String Generator (github.com/thanhpk/randstr v1.0.6):**
-   - Generates random strings, useful for various purposes such as tokens or passwords.
+**Random String Generator ([`thanhpk/randstr`](https://github.com/thanhpk/randstr) v1.0.6):**
+   - Generates random strings for various purposes.
 
-**Crypto (golang.org/x/crypto v0.14.0):**
+**Crypto ([`golang.org/x/crypto`](https://pkg.go.dev/golang.org/x/crypto) v0.14.0):**
    - Part of the Go standard library, includes cryptographic primitives.
 
-**Email (gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df):**
+**Email ([`gomail.v2`](https://pkg.go.dev/gopkg.in/gomail.v2) v2.0.0-20160411212932-81ebce5c23df):**
     - Library for sending emails, crucial for applications involving email functionality.
 
-**GORM SQLite Driver (gorm.io/driver/sqlite v1.5.4):**
+**GORM SQLite Driver ([`gorm.io/driver/sqlite`](https://gorm.io/docs/sqlite.html) v1.5.4):**
     - SQLite driver for GORM, a powerful Object-Relational Mapping (ORM) library.
 
-**GORM (gorm.io/gorm v1.25.5):**
-    - GORM itself, providing a flexible way to interact with databases.
+**GORM ([`gorm.io/gorm`](https://gorm.io/docs/index.html) v1.25.5):**
+    - Provides a flexible way to interact with databases.
 
 ### Note:
 
-- Ensure you understand the licenses associated with these dependencies.
+- Understand the licenses associated with these dependencies.
 - Keep dependencies up to date for security and feature improvements.
-- Refer to the project's documentation for specific use cases or configurations related to these dependencies.
+- Refer to the project's documentation for specific use cases or configurations.
 
 
 ## Features
