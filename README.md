@@ -75,16 +75,119 @@ Welcome to SmileShield, a Go Fiber project for OAuth and mail authentication! Sm
 
    [![Registration Page](https://cdn.discordapp.com/attachments/1102161138625564673/1193158525183078481/image.png?ex=65abb278&is=65993d78&hm=700ca6e6743220ef080c6a7d04da997e796b7b4cb0d6a47a2d7f795a050b894a&)](registration_page_url)
 
-### User Login
 
-> **Navigate to the Login Page:**
 
-   [![Login Page](https://cdn.discordapp.com/attachments/1102161138625564673/1193162177922732123/image.png?ex=65abb5df&is=659940df&hm=efb361121bf3c5e2e9d0ca87fbc15e01156c72a16eaf788d6f37a48b551d3a41&)](login_page_url)
+### Making a Call with Authorization Token
 
-## Contributing
+1. **Copy the JWT Token from the Login Response.**
 
-Explain how others can contribute to your project.
+   ![JWT Token](https://cdn.discordapp.com/attachments/1102161138625564673/1193162177922732123/image.png?ex=65abb5df&is=659940df&hm=efb361121bf3c5e2e9d0ca87fbc15e01156c72a16eaf788d6f37a48b551d3a41&)
+
+2. **Make an Authenticated API Call:**
+
+   ```bash
+   curl -X GET \
+     https://api.example.com/user-profile \
+     -H "Authorization: Bearer YOUR_JWT_TOKEN"
+      
+![JWT Token](https://cdn.discordapp.com/attachments/1102161138625564673/1193167247657680936/image.png?ex=65abba97&is=65994597&hm=23d4065589c8aeb78870b316a8cd6d3000110dbe77c82c35b1278466c5d1728a&)
+### Google OAuth Configuration Steps
+
+1. **Create OAuth Credentials:**
+
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Navigate to the "APIs & Services" > "Credentials" section.
+   - Click on "Create Credentials" and choose "OAuth client ID."
+   - Configure the consent screen and application type (Web application for this example).
+   - Set the authorized redirect URI(s) for your application.
+
+2. **Retrieve Client ID and Client Secret:**
+
+   - Once the OAuth client is created, note the generated Client ID and Client Secret.
+
+3. **Update SmileShield Configuration:**
+
+   - Open your `.env` file.
+   - Add the Google OAuth Client ID and Client Secret:
+
+     ```env
+     GOOGLE_OAUTH_CLIENT_ID=your_google_oauth_client_id
+     GOOGLE_OAUTH_CLIENT_SECRET=your_google_oauth_client_secret
+     ```
+
+
+![Google OAuth](https://imgur.com/0XgvnpN.gif)
+
+Replace placeholders like `your_google_oauth_client_id` and `your_google_oauth_client_secret` with your actual Google OAuth credentials. The animated GIF shows the process of updating the configuration in your `.env` file for Google OAuth.
+
+### GitHub OAuth Configuration Steps
+
+1. **Create OAuth Credentials:**
+
+   - Go to [GitHub Developer Settings](https://github.com/settings/developers).
+   - Create a new OAuth App.
+   - Configure the application details and set the authorization callback URL(s) for your application.
+
+2. **Retrieve Client ID and Client Secret:**
+
+   - Once the OAuth App is created, note the generated Client ID and Client Secret.
+
+3. **Update SmileShield Configuration:**
+
+   - Open your `.env` file.
+   - Add the GitHub OAuth Client ID and Client Secret:
+
+     ```env
+     GITHUB_OAUTH_CLIENT_ID=your_github_oauth_client_id
+     GITHUB_OAUTH_CLIENT_SECRET=your_github_oauth_client_secret
+     ```
+
+![GitHub OAuth](https://i.imgur.com/utlpi0k.gif)
+
+Replace placeholders like `your_github_oauth_client_id` and `your_github_oauth_client_secret` with your actual GitHub OAuth credentials. The animated GIF shows the process of updating the configuration in your `.env` file for GitHub OAuth.
 
 ## License
 
 Specify the license for your project.
+
+## Contributing
+
+Contributions are welcome! We appreciate your interest in improving SmileShield. Whether you want to report a bug, suggest a feature, or contribute code, here's how you can get involved:
+
+### Bug Reports and Feature Requests
+
+If you encounter a bug or have a feature request, please open an issue on the [GitHub Issues](https://github.com/your-username/smileshield/issues) page. Provide as much detail as possible, including steps to reproduce the issue or a clear description of the new feature.
+
+### Pull Requests
+
+1. Fork the repository and create your branch from `main`.
+
+    ```bash
+    git checkout -b your-branch-name
+    ```
+
+2. Make your changes, test thoroughly, and ensure your code adheres to the project's coding standards.
+
+3. Commit your changes with descriptive commit messages.
+
+    ```bash
+    git commit -m "Your descriptive commit message"
+    ```
+
+4. Push your changes to your fork.
+
+    ```bash
+    git push origin your-branch-name
+    ```
+
+5. Open a pull request to the `main` branch of the original repository.
+
+### Stack Overflow OAuth
+
+We're currently working on adding Stack Overflow OAuth to SmileShield! If you're interested in contributing to this specific feature, follow the general contribution steps mentioned above. When working on the Stack Overflow OAuth integration, please ensure that your changes align with the project's goals and coding standards.
+
+### Getting Help
+
+If you have questions or need help, feel free to reach out on our [Discussions](https://github.com/loopassembly/smileshield/discussions) page.
+
+Thank you for your contribution! 🚀
