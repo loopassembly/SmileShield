@@ -19,6 +19,8 @@ config.json
 *.test.db
 # ignore vscode congif
 *.vscode
+# committxt
+*.commit.txt
 
 
 
