@@ -271,4 +271,5 @@ Thank you for your contribution! 🚀
 
 ## License
 
-Specify the license for your project.
+MIT License
+Copyright (c) 2024 Ashutosh Anand
