@@ -272,4 +272,4 @@ Thank you for your contribution! 🚀
 ## License
 
 MIT License
-Copyright (c) 2024 Ashutosh Anand
+Copyright (c) 2024 Ashutosh Anand.
